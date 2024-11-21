@@ -2,6 +2,10 @@
   "name": "koishi-plugin-novel-lizard",
   "description": "网文搜索下载",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lizard0126/novel-lizard.git"
+  },
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -9,14 +13,14 @@
     "dist"
   ],
   "license": "MIT",
-  "scripts": {},
   "keywords": [
     "chatbot",
     "koishi",
+    "novel",
+    "小说",
     "plugin"
   ],
-  "devDependencies": {},
   "peerDependencies": {
-    "koishi": "4.18.0"
+    "koishi": "^4.18.0"
   }
 }
