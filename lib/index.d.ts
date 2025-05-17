@@ -1,8 +1,9 @@
 import { Context, Schema } from 'koishi';
 export declare const name = "novel-lizard";
 export declare const usage = "\n# \uD83D\uDCD6 \u7F51\u7EDC\u5C0F\u8BF4\u641C\u7D22\u4E0E\u4E0B\u8F7D\n## \u901A\u8FC7\u5173\u952E\u8BCD\u641C\u7D22\u7F51\u7EDC\u5C0F\u8BF4\uFF0C\u5E76\u83B7\u53D6\u4E0B\u8F7D\u94FE\u63A5\n\n## API \u5DF2\u9ED8\u8BA4\u63D0\u4F9B\uFF0C\u5982\u6709\u9700\u8981\u53EF\u81EA\u884C\u66F4\u6362\u3002\n\n## \u8BF7\u5408\u7406\u4F7F\u7528\uFF0C\u907F\u514D\u56E0\u6EE5\u7528\u5BFC\u81F4 API \u9650\u5236\u6216\u5C01\u7981\u3002\n---\n\n<details>\n<summary><strong><span style=\"font-size: 1.3em; color: #2a2a2a;\">\u4F7F\u7528\u65B9\u6CD5</span></strong></summary>\n\n### \u901A\u8FC7\u5173\u952E\u8BCD\u641C\u7D22\u5C0F\u8BF4\n#### \u793A\u4F8B\uFF1A\n<pre style=\"background-color: #f4f4f4; padding: 10px; border-radius: 4px; border: 1px solid #ddd;\">\u5C0F\u8BF4 \u6597\u7834\u82CD\u7A79 // \u641C\u7D22\u5173\u952E\u8BCD\u201C\u6597\u7834\u82CD\u7A79\u201D</pre>\n\n### \u9009\u62E9\u5C0F\u8BF4\u67E5\u770B\u8BE6\u60C5\n\u5728\u641C\u7D22\u7ED3\u679C\u4E2D\uFF0C\u8F93\u5165\u5BF9\u5E94\u7684\u5E8F\u53F7\u5373\u53EF\u67E5\u770B\u5C0F\u8BF4\u8BE6\u60C5\u548C\u4E0B\u8F7D\u94FE\u63A5\u3002\n#### \u793A\u4F8B\uFF1A\n<pre style=\"background-color: #f4f4f4; padding: 10px; border-radius: 4px; border: 1px solid #ddd;\">1 // \u67E5\u770B\u7B2C\u4E00\u672C\u5C0F\u8BF4\u8BE6\u60C5</pre>\n\n### \u53D6\u6D88\u5F53\u524D\u67E5\u8BE2\n#### \u793A\u4F8B\uFF1A\n<pre style=\"background-color: #f4f4f4; padding: 10px; border-radius: 4px; border: 1px solid #ddd;\">0 // \u53D6\u6D88\u5F53\u524D\u641C\u7D22</pre>\n\n</details>\n\n<details>\n<summary><strong><span style=\"font-size: 1.3em; color: #2a2a2a;\">\u5982\u679C\u8981\u53CD\u9988\u5EFA\u8BAE\u6216\u62A5\u544A\u95EE\u9898</span></strong></summary>\n\n<strong>\u53EF\u4EE5[\u70B9\u8FD9\u91CC](https://github.com/lizard0126/javbus-lizard/issues)\u521B\u5EFA\u8BAE\u9898~</strong>\n</details>\n\n<details>\n<summary><strong><span style=\"font-size: 1.3em; color: #2a2a2a;\">\u5982\u679C\u559C\u6B22\u6211\u7684\u63D2\u4EF6</span></strong></summary>\n\n<strong>\u53EF\u4EE5[\u8BF7\u6211\u559D\u53EF\u4E50](https://ifdian.net/a/lizard0126)\uFF0C\u6CA1\u51C6\u5C31\u6709\u52A8\u529B\u66F4\u65B0\u65B0\u529F\u80FD\u4E86~</strong>\n</details>\n";
-export interface Config {
-    apiUrl: string;
-}
-export declare const Config: Schema<Config>;
-export declare function apply(ctx: Context, config: Config): void;
+export declare const Config: Schema<Schemastery.ObjectS<{
+    apiUrl: Schema<string, string>;
+}>, Schemastery.ObjectT<{
+    apiUrl: Schema<string, string>;
+}>>;
+export declare function apply(ctx: Context, config: any): void;

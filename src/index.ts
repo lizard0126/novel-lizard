@@ -42,17 +42,13 @@ export const usage = `
 </details>
 `;
 
-export interface Config {
-  apiUrl: string;
-}
-
-export const Config: Schema<Config> = Schema.object({
+export const Config= Schema.object({
   apiUrl: Schema.string()
-    .default('https://www.hhlqilongzhu.cn/api/novel_1.php')
+    .default('https://www.hhlqilongzhu.cn/api/novel_new.php')
     .description('默认API，请勿更改'),
 });
 
-export function apply(ctx: Context, config: Config) {
+export function apply(ctx: Context, config) {
   const userContext: Record<string, { keyword: string; list: any[]; timeout?: NodeJS.Timeout }> = {};
 
   ctx.command('小说 <keyword>', '搜索网络小说')
